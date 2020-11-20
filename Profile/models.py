@@ -18,3 +18,13 @@ class ProfileTwo(models.Model):
 
     def __str__ (self):
         return self.profileModel
+
+class Ejemplo2(models.Model):
+    ejemplo_campo = models.CharField(max_length = 255, null=False)
+    ejemplo_campo2 = models.CharField(max_length = 255, null=False)
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now_add=True)
+
+    def __str__ (self):
+        return self.ejemplo_campo
+
